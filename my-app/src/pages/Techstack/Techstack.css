@@ -1,0 +1,79 @@
+.techstack {
+    padding-left: 130px;
+    margin-top: 60px;
+}
+
+.techstack hr {
+    color: #138781;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.techstack h2 {
+    font-weight: bold;
+    color: #138781;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end; /* Align cards to the right */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    padding-right: 1px; /* Adds spacing from the right */
+}
+
+.col-md-3 {
+    flex: 0 0 auto; /* Prevent auto-resizing */
+    width: 230px; /* Adjust card width */
+    margin: 10px; /* Adds spacing between cards */
+}
+
+.card {
+    cursor: pointer;
+    width: 100%; /* Ensures the card takes full column width */
+    height: 100px; /* Adjust card height */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-left: auto;
+}
+
+/* Centering icon and text */
+.card .media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Adjust icon size */
+.card .tech-icon {
+    font-size: 40px; /* Modify icon size */
+    color: #4CAF50; /* Change color */
+}
+
+/* Align text */
+.card .media-body h5 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05); /* Slight enlargement */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #d33694;
+    transition: 1s;
+}
+
+/* =============================== */
+@media (max-width: 600px) {
+    .techstack {
+      padding: 0;
+      margin: 0;
+      margin-top: 50px;
+    }
+  
+    .techstack hr {
+      width: 280px;
+    }
+  }
+  
